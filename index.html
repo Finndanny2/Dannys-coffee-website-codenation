@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome · Danny’s Coffee Suite</title>
+    <meta
+      name="description"
+      content="Pick a vibe. Sip. Enjoy. Find your perfect coffee, soundtrack, and bites."
+    />
+    <link rel="preload" as="image" href="coffee_bar.jpeg" />
+    <link rel="icon" href="newlogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="page home">
+    <header class="site-header" role="banner">
+      <a class="brand" href="index.html">
+        <img
+          class="brand-logo"
+          src="newlogo.png"
+          width="72"
+          height="72"
+          alt="Danny’s Coffee Suite logo"
+        />
+        <span class="brand-name">Danny’s Coffee Suite</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="coffee.html">Coffee</a>
+        <a href="music.html">Music</a>
+        <a href="food.html">Food</a>
+        <a href="forum.html">Forum</a>
+      </nav>
+    </header>
+
+    <main id="content" class="site-main">
+      <section class="hero" aria-label="Welcome">
+        <div class="logo-badge" aria-hidden="true">
+          <img src="newlogo.png" alt="" />
+        </div>
+
+        <div class="hero-content container">
+          <h1 class="display">Pick a vibe. Sip. Enjoy.</h1>
+          <p class="lead">
+            Find your perfect coffee, soundtrack, and a tasty bite — all in one
+            place.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="coffee.html">Explore Coffee</a>
+            <a class="btn btn-secondary" href="music.html">Browse Music</a>
+            <a class="btn btn-ghost" href="food.html">Grab a Bite</a>
+          </div>
+        </div>
+
+        <figure class="hero-media" aria-hidden="true">
+          <img src="coffee_bar.jpeg" alt="" />
+        </figure>
+      </section>
+
+      <section class="tiles container" aria-label="Quick picks">
+        <article class="tile">
+          <img src="espresso.jpeg" alt="Fresh espresso shot in a white cup" />
+          <div class="tile-body">
+            <h2 class="h4">Coffee</h2>
+            <p>From bold espresso to smooth cold brew, discover your cup.</p>
+            <a class="link" href="coffee.html">Explore coffee →</a>
+          </div>
+        </article>
+
+        <article class="tile">
+          <img
+            src="homepage%20background.png"
+            alt="Illustrated coffee, music notes and treats"
+          />
+          <div class="tile-body">
+            <h2 class="h4">Music</h2>
+            <p>Curate the perfect playlist to match your favorite roast.</p>
+            <a class="link" href="music.html">Find your rhythm →</a>
+          </div>
+        </article>
+
+        <article class="tile">
+          <img src="croissant.jpeg" alt="Golden flaky croissants" />
+          <div class="tile-body">
+            <h2 class="h4">Food</h2>
+            <p>Pair your drink with pastries, cookies, and sandwiches.</p>
+            <a class="link" href="food.html">Grab a bite →</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Danny’s Coffee Suite • Crafted with love &
+        caffeine
+      </p>
+      <nav class="social-links" aria-label="Social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://twitter.com/" target="_blank" rel="noopener"
+          >Twitter</a
+        >
+        <a href="https://facebook.com/" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
