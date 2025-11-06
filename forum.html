@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee Lounge Forum · Danny’s Coffee Suite</title>
+    <meta
+      name="description"
+      content="Share your thoughts about coffee, music, and good food."
+    />
+    <link rel="icon" href="newlogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="page forum">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img
+          class="brand-logo"
+          src="newlogo.png"
+          width="72"
+          height="72"
+          alt="Danny’s Coffee Suite"
+        />
+        <span class="brand-name">Danny’s Coffee Suite</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="coffee.html">Coffee</a>
+        <a href="music.html">Music</a>
+        <a href="food.html">Food</a>
+        <a href="forum.html" aria-current="page">Forum</a>
+      </nav>
+    </header>
+
+    <main id="content" class="site-main">
+      <section class="page-hero has-overlay">
+        <div class="logo-badge" aria-hidden="true">
+          <img src="newlogo.png" alt="" />
+        </div>
+        <img src="coffee_bar.jpeg" alt="" />
+        <div class="page-hero-content container">
+          <h1 class="display">Welcome to the Coffee Lounge ☕</h1>
+          <p class="lead">
+            Share your thoughts about coffee, music, and good food!
+          </p>
+        </div>
+      </section>
+
+      <div class="forum-wrap container">
+        <section class="panel" aria-labelledby="start-discussion">
+          <h2 id="start-discussion" class="h3">Start a Discussion</h2>
+          <form class="form" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="username">Name</label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Your name…"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <input
+                id="topic"
+                name="topic"
+                type="text"
+                placeholder="What's on your mind?"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write your message…"
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Post Message</button>
+          </form>
+        </section>
+
+        <section class="panel" aria-labelledby="recent-discussions">
+          <h2 id="recent-discussions" class="h3">Recent Discussions</h2>
+          <article class="post">
+            <h3 class="h4">☕ Best Coffee Blend?</h3>
+            <p class="muted">
+              Posted by <span class="accent">Danny</span> — 2 hours ago
+            </p>
+            <p>
+              I’ve been experimenting with espresso blends — anyone else have a
+              favorite roast for cappuccinos?
+            </p>
+          </article>
+          <article class="post">
+            <h3 class="h4">🎶 Music to Sip By</h3>
+            <p class="muted">
+              Posted by <span class="accent">Jules</span> — 1 day ago
+            </p>
+            <p>
+              I love lo-fi beats when working at coffee shops. What’s your go-to
+              coffeehouse playlist?
+            </p>
+          </article>
+          <article class="post">
+            <h3 class="h4">🥐 Favorite Coffee Shop Treats</h3>
+            <p class="muted">
+              Posted by <span class="accent">Riley</span> — 3 days ago
+            </p>
+            <p>
+              Nothing beats a warm croissant with a latte! What’s your ultimate
+              pairing?
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Danny’s Coffee Suite</p>
+      <nav class="social-links" aria-label="Social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://twitter.com/" target="_blank" rel="noopener"
+          >Twitter</a
+        >
+        <a href="https://facebook.com/" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music · Danny’s Coffee Suite</title>
+    <meta
+      name="description"
+      content="Find the perfect music vibe for your coffee break."
+    />
+    <link rel="icon" href="newlogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="page music">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img
+          class="brand-logo"
+          src="newlogo.png"
+          width="72"
+          height="72"
+          alt="Danny’s Coffee Suite"
+        />
+        <span class="brand-name">Danny’s Coffee Suite</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="coffee.html">Coffee</a>
+        <a href="music.html" aria-current="page">Music</a>
+        <a href="food.html">Food</a>
+        <a href="forum.html">Forum</a>
+      </nav>
+    </header>
+
+    <main id="content" class="site-main">
+      <section class="page-hero has-overlay">
+        <div class="logo-badge" aria-hidden="true">
+          <img src="newlogo.png" alt="" />
+        </div>
+        <img src="musicbackground.png" alt="" />
+        <div class="page-hero-content container">
+          <h1 class="display">Find Your Music Vibe</h1>
+          <p class="lead">
+            Genres to match every mood — press play and sip away.
+          </p>
+        </div>
+      </section>
+
+      <section class="cards container" aria-label="Music genres">
+        <article class="card">
+          <figure>
+            <img src="lofi.jpg" alt="Lo-Fi Beats" />
+            <figcaption>
+              <span class="item-title">Lo-Fi Beats</span>
+              <p class="desc">Chill, dusty grooves for focus and calm.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="jazz.jpg" alt="Jazz" />
+            <figcaption>
+              <span class="item-title">Jazz</span>
+              <p class="desc">Smoky sax, brushed drums, late-night swing.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="acoustic.jpg" alt="Acoustic" />
+            <figcaption>
+              <span class="item-title">Acoustic</span>
+              <p class="desc">
+                Warm strings and mellow singer-songwriter tunes.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="indie.jpg" alt="Indie" />
+            <figcaption>
+              <span class="item-title">Indie</span>
+              <p class="desc">Feel-good guitars and modern alt vibes.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="chillhop.jpg" alt="Chillhop" />
+            <figcaption>
+              <span class="item-title">Chillhop</span>
+              <p class="desc">Jazz-hop instrumentals with head-nod bounce.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="ambient.jpg" alt="Ambient" />
+            <figcaption>
+              <span class="item-title">Ambient</span>
+              <p class="desc">Airy pads and soundscapes for deep relaxation.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="classical.jpg" alt="Classical" />
+            <figcaption>
+              <span class="item-title">Classical</span>
+              <p class="desc">Elegant strings and piano for timeless focus.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="house.jpg" alt="House" />
+            <figcaption>
+              <span class="item-title">House</span>
+              <p class="desc">Uplifting 4/4 rhythms to keep energy flowing.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="R%26B.jpg" alt="R&B" />
+            <figcaption>
+              <span class="item-title">R&B</span>
+              <p class="desc">Smooth vocals and sultry late-night grooves.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="hiphop.jpg" alt="Hip-Hop" />
+            <figcaption>
+              <span class="item-title">Hip-Hop</span>
+              <p class="desc">
+                Beats, rhythm, flow — modern and classic vibes.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="pop.jpg" alt="Pop" />
+            <figcaption>
+              <span class="item-title">Pop</span>
+              <p class="desc">Catchy melodies and feel-good energy.</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="soul.jpg" alt="Soul" />
+            <figcaption>
+              <span class="item-title">Soul</span>
+              <p class="desc">Warm vocals, deep emotion, timeless grooves.</p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Danny’s Coffee Suite</p>
+      <nav class="social-links" aria-label="Social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://twitter.com/" target="_blank" rel="noopener"
+          >Twitter</a
+        >
+        <a href="https://facebook.com/" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
